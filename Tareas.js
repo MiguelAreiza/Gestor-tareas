@@ -64,12 +64,7 @@ $(document).ready(function() {
     function CreateTask(Order, Task, Color) {
 
         if (Order === '' || Task === '') {
-            $('#Notificacion').show();
-            $('#Notificacion').html('Diligencia los campos requeridos');
-            $('#Notificacion').css('background', '#ff0000');
-            setTimeout(() => {
-                $('#Notificacion').hide();
-            }, 2000);
+            MostrarNotificacion('Diligencia los campos requeridos', '#ff0000');
             return false;
         }
 
