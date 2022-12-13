@@ -51,12 +51,7 @@ $(document).ready(function() {
 
                 $('#btnCreate').html('Añadir');
     
-                $('#Notificacion').show();
-                $('#Notificacion').html('Tarea actualizada correctamente');
-                $('#Notificacion').css('background', '#00ff00');
-                setTimeout(() => {
-                    $('#Notificacion').hide();
-                }, 3000);
+                MostrarNotificacion('Tarea actualizada correctamente', '#00ff00')
             } else{
                 setTimeout(() => {
                     $('#Notificacion').show();
