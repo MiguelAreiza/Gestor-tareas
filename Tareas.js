@@ -51,17 +51,10 @@ $(document).ready(function() {
 
                 $('#btnCreate').html('Añadir');
     
-                MostrarNotificacion('Tarea actualizada correctamente', '#00ff00')
+                MostrarNotificacion('Tarea actualizada correctamente', '#00ff00');
             } else{
                 setTimeout(() => {
-                    $('#Notificacion').show();
-                    $('#Notificacion').html('Error al actualizar');
-                    $('#Notificacion').css('background', '#0000ff');
-                    $('#Notificacion').css('color', '#fff');
-                    setTimeout(() => {
-                        $('#Notificacion').hide();
-                        $('#Notificacion').css('color', '#000');
-                    }, 3000);
+                    MostrarNotificacion('Error al actualizar', '#0000ff');
                 }, 2500);
             }   
         }
