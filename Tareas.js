@@ -2,6 +2,8 @@
 
 $(document).ready(function() {
 
+    MostrarNotificacion('Bienvenidos', '#00f900');
+
     let TaskList = [];
 
     if (localStorage.TaskList) {
