@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de tareas</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Tareas.css">
+    <script src="Tareas.js"></script>
+</head>
+<body>
+    <div class="Base">
+        <div class="CardTask">
+            <div class="Header">
+                <h1>Mi lista de tareas</h1>
+                <label>Haz click sobre una tarea para modificarla o doble clic para marcarla como completada o desmarcarla</label>
+            </div>
+            <div class="Input">
+                <input id="Order" type="number" placeholder="#" required>
+                <input id="Task" type="text" placeholder="Nueva tarea" required>
+                <input id="Color" type="color" value="#cccccc">
+                <button id="btnCreate">Añadir</button>
+            </div>
+            <div class="TaskList">
+                <h3>Listado de tareas</h3>
+                <div id="TaskList">                 
+                </div>
+            </div>
+            <div class="Buttons">
+                <button id="btnDelete">Eliminar completas</button>
+                <button id="btnClean">Vaciar lista</button>
+                <button id="btnSave">Guardar lista</button>
+            </div>
+        </div>
+    </div>
+    <div id="Notificacion"></div>
+</body>
+</html>
